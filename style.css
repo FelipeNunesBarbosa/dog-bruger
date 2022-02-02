@@ -1,7 +1,4 @@
-*{
-    margin: 0px;
-    padding: 0px;
-}
+
 :root{
     --cor0: #fad9c0;
     --cor1: #F2A56B;
@@ -13,6 +10,10 @@
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
 }
 
+*{
+    margin: 0px;
+    padding: 0px;
+}
 
 
 body{
@@ -72,13 +73,61 @@ nav > a:hover{
     color: var(--cor5);
 }
 
-.falecom{
-    font-size: 2em;
+main{
+    min-width: 300px; /*Largura minima*/
+    max-width: 1000px; /*Largura maxima*/
+    margin: auto; /*Conteudo no centro*/
+    margin-bottom: 30px; /*Margim em baixo*/
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
 }
+
+main h1{
+    color: var(--cor5);
+    /*font-family: ;*/
+    font-weight: normal;
+    font-size: 1.8em;
+}
+
+main h2{
+    /*font-family: ;*/
+    color: var(--cor4);
+    font-size: 1.3em;
+    font-weight: normal;
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    text-indent: 8px;
+    margin-bottom: 10px;
+}
+
+main p{
+    margin: 15px 0px;
+    text-align: justify; /*organiza a escrita*/
+    text-indent: 30px; /*espaço no começo do paragrafo*/
+    font-size: 1em; /*tamanho da letra*/
+    line-height: 2em; /*espaçamento entre as linhas*/
+}
+
+main strong{
+    color: var(--cor4);
+    font-weight: bold;/*deixar letra em negrito*/
+}
+
 
 main a{
     text-decoration: none;
-    color: black;
+    font-weight: bold;
+    color: var(--cor5);
+    /*background-color: var(--cor1);*/
+    padding: 2px 6px;
+}
+
+main a:hover{ /*quando passar mouse em cima*/
+    text-decoration: underline; /*colocar _ no texto*/
+    color: var(--cor4); /*troca a cor do texto*/
 }
 
 main ul{
@@ -88,54 +137,43 @@ main ul{
     text-indent: 2em;
 }
 
-article{
-    background: white;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.205);
-    margin: 0px 15em;
-    border-radius: 0px 0px 10px 10px;
+main img{
+    width: 100%;
 }
 
-article h2{
-    text-align: center;
-    padding: 15px;
-}
-
-article h3{
+aside{
+    background-color: var(--cor1);
     padding: 10px;
-    color: var(--cor4);
-}
-article p{
-    text-align: center justify;
-    text-indent: 40px;
-    line-height: 2em;
-    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.308);
 }
 
-article a:hover{
-    text-decoration: underline;
-    color: var(--cor4);
+aside > h3{
+    background-color: var(--cor4);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
 }
 
-img{
-    display: block;
-    margin: auto;
-    text-align: center;
-    padding-bottom: 20px;
+aside > ul{
+    list-style-type: '\2714\00a0\00a0'; /*emoji de check e espaço*/
+    list-style-position: inside; /*posição da lista*/
+    columns: 2; /*divide em duas colunas*/
 }
 
 footer{
-    background: black;
-    text-decoration: none;
+    background-color: var(--cor5);
     color: white;
     text-align: center;
-    margin-top: 2%;
-    margin-bottom: 0px;
-    padding: 5px;    
+    font-size: 0.8em;
+    padding: 5px;
 }
 
 footer a{
-    text-decoration: none;
     color: white;
+    font-weight: bolder;
+    text-decoration: none;
 }
 
 footer a:hover{
