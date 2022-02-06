@@ -1,4 +1,9 @@
-
+@font-face {
+    font-family: 'Dog';
+    src: url('fontes/Bouncy-Thin-PERSONAL_USE_ONLY.otf') format('opentype');
+    font-weight: normal;
+    font-size: normal;
+}
 :root{
     --cor0: #fad9c0;
     --cor1: #F2A56B;
@@ -30,15 +35,18 @@ header{
     min-height: 150px;
     text-align: center;
     padding-top: 40px;
+    
 }
 
 header > h1 {
-    color: white;
-    font-family: var(--fonte-destaque);
-    font-size: 3em;
+    color: rgba(255, 255, 255, 0.884);
+    -webkit-text-stroke-width: 5px; /* largura da borda */
+    -webkit-text-stroke-color: #000; /* cor da borda */
+    font-family: 'Dog';
+    font-size: 5em;
     font-weight: normal;
     margin-bottom: 20px;
-    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.267);
 }
 
 header > p{
