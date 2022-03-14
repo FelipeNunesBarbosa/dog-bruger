@@ -26,12 +26,15 @@ body{
     font-family: var(--fonte-padrao);
 }
 
+a.externo::after{
+    content: '\1f517';
+}
+
 header{
     background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
     min-height: 150px;
     text-align: center;
     padding-top: 40px;
-    
 }
 
 header > h1 {
@@ -83,25 +86,10 @@ main{
     margin: auto; /*Conteudo no centro*/
     margin-bottom: 30px; /*Margim em baixo*/
     background-color: white;
+    padding: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-}
-
-h1{
-    color: var(--cor5);
-    /*font-family: ;*/
-    font-weight: normal;
-    font-size: 2em;
-}
-
-h2{
-    /*font-family: ;*/
-    color: var(--cor4);
-    font-size: 1.3em;
-    font-weight: normal;
-    text-indent: 8px;
-    margin-bottom: 10px;
 }
 
 main p{
@@ -112,34 +100,28 @@ main p{
     line-height: 2em; /*espaçamento entre as linhas*/
 }
 
-div#container{
-    margin: 0px 10px 10px 10px;
-    padding-top: 10px;
+main a{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor5);
+    /*background-color: var(--cor1);*/
+    padding: 2px 6px;
 }
 
-.lanches{
-    width: 300px;
-    height: 50px;
-    display: inline-table;
-    border: 1px solid black;
-    border-radius: 5px;
-    padding: 10.8px;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.11);
-    margin-bottom: 10px; 
-    text-align: center;
+main a:hover{ /*quando passar mouse em cima*/
+    text-decoration: underline; /*colocar _ no texto*/
+    color: var(--cor4); /*troca a cor do texto*/
 }
 
-.lanches p{
-    display: none;
+main ul{
+    list-style-type: '\2714\00a0\00a0'; /*emoji de check e espaço*/
+    list-style-position: inside; /*posição da lista*/
+    font-size: 1.5em;
+    text-indent: 2em;
 }
 
-.lanches:hover{
-    width: 300px;
-    height: 200px;
-}
-
-.lanches:hover > p{
-    display: block;
+main img{
+    width: 100%;
 }
 
 footer{

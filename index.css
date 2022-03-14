@@ -1,0 +1,166 @@
+@font-face {
+    font-family: 'Dog';
+    src: url('fontes/Bouncy-Thin-PERSONAL_USE_ONLY.otf') format('opentype');
+    font-weight: normal;
+    font-size: normal;
+}
+:root{
+    --cor0: #fad9c0;
+    --cor1: #F2A56B;
+    --cor2: #F07C21;
+    --cor3: #BD611A;
+    --cor4: #703A10;
+    --cor5: #704D31;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body{
+    background-color: var(--cor0);
+    font-family: var(--fonte-padrao);
+}
+
+header{
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+    
+}
+
+header > h1 {
+    color: rgba(255, 255, 255, 0.884);
+    -webkit-text-stroke-width: 5px; /* largura da borda */
+    -webkit-text-stroke-color: #000; /* cor da borda */
+    font-family: 'Dog';
+    font-size: 5em;
+    font-weight: normal;
+    margin-bottom: 20px;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.267);
+}
+
+header > p{
+    font-family: var(--fonte-destaque);
+    font-size: 1.2em;
+    color: white;
+    max-width: 600px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: auto;
+    padding-bottom: 15px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.192);
+}
+
+nav{
+    background-color: var(--cor5);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.267);
+}
+
+nav > a{
+    color: var(--cor1);
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: .5;
+}
+
+nav > a:hover{
+    background-color: var(--cor3);
+    color: var(--cor5);
+}
+
+main{
+    min-width: 300px; /*Largura minima*/
+    max-width: 1000px; /*Largura maxima*/
+    margin: auto; /*Conteudo no centro*/
+    margin-bottom: 30px; /*Margim em baixo*/
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main h1{
+    color: var(--cor4);
+    /*font-family: ;*/
+    font-weight: bold;
+    font-size: 3em;
+    margin: 10px;
+    text-decoration: underline;
+}
+
+main h2{
+    /*font-family: ;*/
+    color: var(--cor4);
+    font-size: 1.3em;
+    font-weight: normal;
+    text-indent: 8px;
+    margin-bottom: 10px;
+}
+
+main p{
+    margin: 15px 0px;
+    text-align: justify; /*organiza a escrita*/
+    text-indent: 30px; /*espaço no começo do paragrafo*/
+    font-size: 1em; /*tamanho da letra*/
+    line-height: 2em; /*espaçamento entre as linhas*/
+}
+
+div#container{
+    margin: 0px 10px 10px 10px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.lanches{
+    width: 300px;
+    height: 50px;
+    
+    display: inline-table;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10.8px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.11);
+    margin-bottom: 10px; 
+    text-align: center;
+}
+
+.lanches p{
+    display: none;
+}
+
+.lanches:hover{
+    width: 300px;
+    height: 200px;
+}
+
+.lanches:hover > p{
+    display: block;
+}
+
+footer{
+    background-color: var(--cor5);
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+footer a{
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+    color: var(--cor1);
+}
