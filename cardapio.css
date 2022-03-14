@@ -119,55 +119,11 @@ main p{
     line-height: 2em; /*espaçamento entre as linhas*/
 }
 
-main strong{
-    color: var(--cor4);
-    font-weight: bold;/*deixar letra em negrito*/
-}
-
-
-main a{
-    text-decoration: none;
-    font-weight: bold;
-    color: var(--cor5);
-    /*background-color: var(--cor1);*/
-    padding: 2px 6px;
-}
-
-main a:hover{ /*quando passar mouse em cima*/
-    text-decoration: underline; /*colocar _ no texto*/
-    color: var(--cor4); /*troca a cor do texto*/
-}
-
-main ul{
-    list-style-type: '\2714\00a0\00a0'; /*emoji de check e espaço*/
-    list-style-position: inside; /*posição da lista*/
-    font-size: 1.5em;
-    text-indent: 2em;
-}
-
-main img{
-    width: 100%;
-}
-
 aside{
     background-color: var(--cor1);
     padding: 10px;
     border-radius: 10px;
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.308);
-}
-
-aside > h3{
-    background-color: var(--cor4);
-    color: white;
-    padding: 10px;
-    margin: -10px -10px 0px -10px;
-    border-radius: 10px 10px 0px 0px;
-}
-
-aside > ul{
-    list-style-type: '\2714\00a0\00a0'; /*emoji de check e espaço*/
-    list-style-position: inside; /*posição da lista*/
-    columns: 2; /*divide em duas colunas*/
 }
 
 .lanches{
@@ -185,17 +141,13 @@ aside > ul{
     background: white;
 }
 
-.preco{
-    text-align: right;
-}
-
 .lanches p{
     display: none;
 }
 
 .lanches:hover{
     width: 400px;
-    height: 120px;
+    height: 150px;
 }
 
 .lanches:hover > p{
@@ -205,10 +157,10 @@ aside > ul{
 
 ol#hot{
     margin-top: 20px;
-    columns: 2
 }
 
 ol#x{
+    
     margin-top: 20px;
     columns: 2
 }
