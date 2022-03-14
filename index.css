@@ -100,7 +100,7 @@ main h1{
 main h2{
     /*font-family: ;*/
     color: var(--cor4);
-    font-size: 1.3em;
+    font-size: 1.5em;
     font-weight: normal;
     text-indent: 8px;
     margin-bottom: 10px;
@@ -112,6 +112,10 @@ main p{
     text-indent: 30px; /*espaço no começo do paragrafo*/
     font-size: 1em; /*tamanho da letra*/
     line-height: 2em; /*espaçamento entre as linhas*/
+}
+
+strong{
+    font-size: 1em;
 }
 
 div#container{
