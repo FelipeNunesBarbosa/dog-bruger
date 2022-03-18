@@ -21,9 +21,13 @@ function popularForm(resposta) {
         return;
     }
     let entrega = 'Rua União da Vitória'
-    if(resposta.logradouro=entrega){
+    if(resposta.logradouro==entrega){
         valFrete.value = 'Frete: R$2,00'
         valFrete.style.background = 'green'
+        valFrete.style.color = 'white'
+    }else{
+        valFrete.value = 'Não entregamos não sua região!'
+        valFrete.style.background = 'red'
         valFrete.style.color = 'white'
     }
     rua.value = resposta.logradouro;
