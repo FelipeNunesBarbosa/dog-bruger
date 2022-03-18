@@ -90,15 +90,9 @@ main{
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    text-align: center;
 }
 
-main p{
-    margin: 15px 0px;
-    text-align: justify; /*organiza a escrita*/
-    text-indent: 30px; /*espaço no começo do paragrafo*/
-    font-size: 1em; /*tamanho da letra*/
-    line-height: 2em; /*espaçamento entre as linhas*/
-}
 
 main a{
     text-decoration: none;
@@ -114,14 +108,37 @@ main a:hover{ /*quando passar mouse em cima*/
 }
 
 main ul{
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.418);
     list-style-type: '\2714\00a0\00a0'; /*emoji de check e espaço*/
     list-style-position: inside; /*posição da lista*/
     font-size: 1.5em;
     text-indent: 2em;
+    margin-bottom: 10px;
+    text-align: left;
 }
 
-main img{
-    width: 100%;
+.redeSoci{
+    min-width: 400px;
+    max-width: 500px;
+    margin: auto;
+    text-align: left;
+    padding: 5px;
+}
+
+input{
+    display: block;
+    margin: auto;
+    height: 30px;
+    width: 400px;
+    border-radius: 5px;
+    font-size: 1em;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.418);
+}
+
+div#ncep{
+    text-align: center;
 }
 
 footer{
