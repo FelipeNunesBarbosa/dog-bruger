@@ -120,7 +120,7 @@ main ul{
 }
 
 .redeSoci{
-    min-width: 400px;
+    min-width: 300px;
     max-width: 500px;
     margin: auto;
     text-align: left;
@@ -131,10 +131,11 @@ input{
     display: block;
     margin: auto;
     height: 30px;
-    min-width: 400px;
+    width: 400px;
     border-radius: 5px;
     font-size: 1em;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.418);
+    text-indent: 5px;
 }
 
 div#ncep{

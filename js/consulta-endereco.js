@@ -3,6 +3,7 @@ let rua = document.querySelector('#rua');
 let bairro = document.querySelector('#bairro');
 let cidade = document.querySelector('#cidade');
 let estado = document.querySelector('#estado');
+let valFrete = document.querySelector('#valFrete')
 
 cep.value = '';
 
@@ -19,9 +20,11 @@ function popularForm(resposta) {
         alert('CEP não encontrado');
         return;
     }
-    let entrega = 'Cambé'
-    if(resposta.localidade!=entrega){
-        alert('Não entregamos na sua região')
+    let entrega = 'Rua União da Vitória'
+    if(resposta.logradouro=entrega){
+        valFrete.value = 'Frete: R$2,00'
+        valFrete.style.background = 'green'
+        valFrete.style.color = 'white'
     }
     rua.value = resposta.logradouro;
     bairro.value = resposta.bairro;
